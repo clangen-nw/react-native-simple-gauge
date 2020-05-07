@@ -41,6 +41,7 @@ export default class AnimatedGaugeProgress extends React.Component {
       {
         toValue: this.props.fill,
         tension,
+        useNativeDriver: false,
         friction
       }
     ).start(onAnimationComplete);
